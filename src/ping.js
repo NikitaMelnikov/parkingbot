@@ -5,8 +5,6 @@ const http = require('http');
 
 function startPing() {
     setInterval(() => {
-        http.get(PING_URL);
-
         const hours = new Date().getUTCHours();
 
         console.log('ping ', hours);
